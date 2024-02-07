@@ -1,4 +1,4 @@
-// function calculateMoney(ticketSale) {
+// function calculateMoney(ticketSale) { //PROBLEM 1 -
 //     let DarwanCosts = 500;
 //     let StaffLunchCosts = 50;
 //     let TotalStaff = 8;
@@ -17,30 +17,39 @@
 
 
 
-// function checkName(name) { //problem 2
-//     let endWord = ['A, y, i , e , o , u, w'];
-   
-    
-//     return name;
-// }
-// const result =checkName("rakib");
-
-
-function deleteInvalids(array) {
-    if(!Array.isArray(array)){
-        return "“Invalid Array”";
+function checkName(name) { //PROBLEM 2 -
+    if (typeof name !== "string") {
+        return "invalid";
     }
-       let onlyNum=[];
-    for(const oneArray of array){
-     let numberArray = Number(oneArray);
-         if(typeof oneArray === "number" && !isNaN(numberArray) ){
-            onlyNum.push(oneArray);
-         }
+    const lastChar = name[name.length - 1].toLowerCase();
+
+    const checkName = ["a", "y", "i", "e", "o", "u", "w"];
+
+    if (checkName.includes(lastChar)) {
+        return "Good Name";
+    } else {
+        return "Bad Name";
     }
-    return onlyNum;
 }
-const result = deleteInvalids({ num: [1, 2, 3] });
+const result = checkName("JONY");
 console.log(result);
+
+
+// function deleteInvalids(array) { //problem 3 -
+//     if(!Array.isArray(array)){
+//         return "“Invalid Array”";
+//     }
+//        let onlyNum=[];
+//     for(const oneArray of array){
+//      let numberArray = Number(oneArray);
+//          if(typeof oneArray === "number" && !isNaN(numberArray) ){
+//             onlyNum.push(oneArray);
+//          }
+//     }
+//     return onlyNum;
+// }
+// const result = deleteInvalids({ num: [1, 2, 3] });
+// console.log(result);
 
 
 // function password(obj) { //problem 4
