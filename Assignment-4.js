@@ -6,12 +6,12 @@
 //        let totalTicketPrice = ticketPrice * ticketSale;
 //        let totalCosts =DarwanCosts+ (StaffLunchCosts * TotalStaff);
 //     if(ticketSale<0){
-//         return "Invalid Number"
+//         return "Invalid Number";
 //     }
 //     let costs = totalTicketPrice - totalCosts;
 //        return costs;
 // }
-// const result = calculateMoney(-10);
+// const result = calculateMoney(-130);
 // console.log(result);
 
 
@@ -21,28 +21,27 @@
 //     if (typeof name !== "string") {
 //         return "invalid";
 //     }
-//     const lastChar = name[name.length - 1].toLowerCase();
-
-//     const checkName = ["a", "y", "i", "e", "o", "u", "w"];
-
-//     if (checkName.includes(lastChar)) {
+//     const lastCheck = name[name.length - 1];
+//     let listUperCass = lastCheck.toLowerCase();
+//     const checkNames = ["a", "y", "i", "e", "o", "u", "w"];
+//     if (checkNames.includes(listUperCass)) {
 //         return "Good Name";
 //     } else {
 //         return "Bad Name";
 //     }
 // }
-// const result = checkName("jony");
+// const result = checkName(["gsg"]);
 // console.log(result);
 
 
 // function deleteInvalids(array) { //problem 3 -
 //     if(!Array.isArray(array)){
-//         return "“Invalid Array”";
+//         return "Invalid Array";
 //     }
 //        let onlyNum=[];
 //     for(const oneArray of array){
 //      let numberArray = Number(oneArray);
-//          if(typeof oneArray === "number" && !isNaN(numberArray) ){
+//          if(typeof oneArray === "number" && !isNaN(numberArray)){
 //             onlyNum.push(oneArray);
 //          }
 //     }
@@ -74,11 +73,9 @@
 //     }
 
 // }
-// console.log(password({ name: "kolimuddin", birthYear: 1999, siteName: "GOOGLE" }));
-// { name: "kolimuddin", birthYear: 1999, siteName: "google" }
-// { name: "rahat", birthYear: 2002, siteName: "Facebook" }
-//{name: "toky" , birthYear: 200, siteName: "Facebook"}
-//{ name: "maisha" , birthYear: 2002 }
+// const result = password({ name: "maisha" , birthYear: 2002 });
+// console.log(result);
+
 
 
 
@@ -104,11 +101,11 @@
 //     }
 //     let saving =sumPayment - livingCost;
 //     if (saving < 0) {
-//                 return "“earn more”";
+//                 return "earn more";
 //             }
 //             else{
 //                 return saving;
 //             } 
 // }
-// const result = monthlySavings(100, [900, 2700, 3400]);
+// const result = monthlySavings([900, 2700, 3400], 1000);
 // console.log(result);
