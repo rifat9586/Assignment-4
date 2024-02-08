@@ -52,34 +52,34 @@
 // console.log(result);
 
 
-function password(obj) { //problem 4
-    const name = obj.name;
-    const birthYear = obj.birthYear;
-    const siteName = obj.siteName;
-        let objValu=" ";
-    if (typeof name === 'string' && typeof name === 'string' && typeof birthYear === 'number'){
-        let first=siteName.charAt(0)
-        // console.log(first);
-        let firstWord=first.toUpperCase();
-        // console.log(firstWord);
-        let ram=siteName.slice(1);
-        // console.log(ram);
-        let firstUp = first.toUpperCase() + siteName.slice(1);
-        // console.log(firstUp)
-        if (String(birthYear).length !== 4){
-            return "invelut";
-        }
-        else{
-            objValu = firstUp + "#" + name + "@" + birthYear;
-        }
-   }
-      
-    return objValu;
-   
-}
-console.log(password({ name: "toky" , birthYear: 2001, siteName: "Facebook" }));
+// function password(obj) { //problem 4
+//     if (
+//         obj.name !== undefined &&
+//         obj.birthYear !== undefined &&
+//         obj.siteName !== undefined
+//     ) {
+//         if (String(obj.birthYear).length !== 4) {
+//             return "invalid";
+//         }
+//         let webName = obj.siteName.charAt(0)
+//         let firstWord = webName.toUpperCase();
+//         let index1_all = obj.siteName.slice(1);
+//         let endWord = index1_all.toLowerCase();
+//         let ataset = firstWord + endWord;
+//         let result = ataset + "#" + obj.name + "@" + obj.birthYear;
+//         return result;
+//     }
+//     else {
+//         return "invalid";
+//     }
+
+// }
+// console.log(password({ name: "kolimuddin", birthYear: 1999, siteName: "GOOGLE" }));
 // { name: "kolimuddin", birthYear: 1999, siteName: "google" }
 // { name: "rahat", birthYear: 2002, siteName: "Facebook" }
+//{name: "toky" , birthYear: 200, siteName: "Facebook"}
+//{ name: "maisha" , birthYear: 2002 }
+
 
 
 
