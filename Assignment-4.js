@@ -17,22 +17,22 @@
 
 
 
-function checkName(name) { //PROBLEM 2 -
-    if (typeof name !== "string") {
-        return "invalid";
-    }
-    const lastChar = name[name.length - 1].toLowerCase();
+// function checkName(name) { //PROBLEM 2 -
+//     if (typeof name !== "string") {
+//         return "invalid";
+//     }
+//     const lastChar = name[name.length - 1].toLowerCase();
 
-    const checkName = ["a", "y", "i", "e", "o", "u", "w"];
+//     const checkName = ["a", "y", "i", "e", "o", "u", "w"];
 
-    if (checkName.includes(lastChar)) {
-        return "Good Name";
-    } else {
-        return "Bad Name";
-    }
-}
-const result = checkName("JONY");
-console.log(result);
+//     if (checkName.includes(lastChar)) {
+//         return "Good Name";
+//     } else {
+//         return "Bad Name";
+//     }
+// }
+// const result = checkName("jony");
+// console.log(result);
 
 
 // function deleteInvalids(array) { //problem 3 -
@@ -52,16 +52,34 @@ console.log(result);
 // console.log(result);
 
 
-// function password(obj) { //problem 4
-
-//     const name = obj.name;
-//     const birthYear = obj.birthYear;
-//     const siteName = obj.siteName;
-//     let user = Math.random(name + birthYear + siteName);
-//     // const result = name + birthYear + siteName;
-//     return user;
-// }
-// console.log(password({ name: "rahat", birthYear: 2002, siteName: "Facebook" }));
+function password(obj) { //problem 4
+    const name = obj.name;
+    const birthYear = obj.birthYear;
+    const siteName = obj.siteName;
+        let objValu=" ";
+    if (typeof name === 'string' && typeof name === 'string' && typeof birthYear === 'number'){
+        let first=siteName.charAt(0)
+        // console.log(first);
+        let firstWord=first.toUpperCase();
+        // console.log(firstWord);
+        let ram=siteName.slice(1);
+        // console.log(ram);
+        let firstUp = first.toUpperCase() + siteName.slice(1);
+        // console.log(firstUp)
+        if (String(birthYear).length !== 4){
+            return "invelut";
+        }
+        else{
+            objValu = firstUp + "#" + name + "@" + birthYear;
+        }
+   }
+      
+    return objValu;
+   
+}
+console.log(password({ name: "toky" , birthYear: 2001, siteName: "Facebook" }));
+// { name: "kolimuddin", birthYear: 1999, siteName: "google" }
+// { name: "rahat", birthYear: 2002, siteName: "Facebook" }
 
 
 
